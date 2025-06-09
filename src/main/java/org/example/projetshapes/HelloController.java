@@ -12,10 +12,12 @@ import javafx.scene.input.ClipboardContent;
 import javafx.scene.input.Dragboard;
 import javafx.scene.input.TransferMode;
 import org.example.projetshapes.Decorator.ColorDecorator;
+import org.example.projetshapes.Factory.CircleFactory;
+import org.example.projetshapes.Factory.IShapeFactory;
+import org.example.projetshapes.Factory.RectangleFactory;
 import org.example.projetshapes.Strategy.CircleShape;
 import org.example.projetshapes.Strategy.RectangleShape;
 import org.example.projetshapes.Strategy.ShapeDraw;
-import org.example.projetshapes.Factory.ShapeFactory;
 import org.example.projetshapes.entities.*;
 
 import org.example.projetshapes.Logging.*;
@@ -251,19 +253,39 @@ public class HelloController {
         selectedNode2 = null;
         hoveredNode = null;
         redrawCanvas();
+
         List<Shape> shapes = shapeDAO.getShapesByDessinId(dessinId);
         graphNodes.clear();
-        int index=0;
+        int index = 0;
+
         for (Shape s : shapes) {
-            Color color = Color.BLACK;
-            ShapeDraw shapeDraw = ShapeFactory.createShape(s.getType(), s.getX(), s.getY());
+
+            String type = s.getType();
+            IShapeFactory factory;
+
+            switch (type.toLowerCase()) {
+                case "circle":
+                    factory = new CircleFactory();
+                    break;
+                case "rectangle":
+                    factory = new RectangleFactory();
+                    break;
+                default:
+                    logger.log("Type de forme inconnu : " + type);
+                    continue;
+            }
+
+            ShapeDraw shapeDraw = factory.createShape(s.getType(),s.getX(), s.getY());
             shapeDraw.draw(gc);
             graphNodes.add(new Node(index++, shapeDraw));
+
             logger.log("Forme dessinée depuis la BDD : " + s);
         }
+
         redrawCanvas();
     }
-/**Drag events ***/
+
+    /**Drag events ***/
     private void setupDragEvents() {
         for (Label label : new Label[]{ rectLabel ,circleLabel}) {
             label.setOnDragDetected(e -> {

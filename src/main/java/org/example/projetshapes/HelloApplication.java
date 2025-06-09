@@ -7,8 +7,6 @@ import javafx.scene.canvas.Canvas;
 import javafx.stage.Stage;
 import org.example.projetshapes.DAO.ShapeDAO;
 public class HelloApplication extends Application {
-    private final Canvas canvas = new Canvas(600, 400);
-    private final ShapeDAO shapeDAO = new ShapeDAO();
 
     @Override
     public void start(Stage stage) throws Exception {

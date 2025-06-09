@@ -28,25 +28,6 @@ public class DessinDAO {
         return -1;
     }
 
-//    public Dessin getDessinById(int id) throws SQLException {
-//        String sql = "SELECT * FROM dessin WHERE id_dessin = ?";
-//        try (Connection conn = DriverManager.getConnection(url, user, password);
-//             PreparedStatement stmt = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)) {  // <-- correction ici
-//            stmt.setInt(1, id);
-//            ResultSet rs = stmt.executeQuery();
-//
-//            if (rs.next()) {
-//                return new Dessin(
-//                        rs.getInt("id_dessin"),
-//                        rs.getString("nom"),
-//                        LocalDateTime.parse(rs.getString("date_creation")),
-//                        rs.getInt("nb_shapes")
-//                );
-//            }
-//        }
-//        return null;
-//    }
-
     public void updateNbShapes(int currentDessinId, int shapesCount)throws SQLException {
         String sql = "UPDATE dessin SET nb_shapes = ? WHERE id_dessin = ?";
 

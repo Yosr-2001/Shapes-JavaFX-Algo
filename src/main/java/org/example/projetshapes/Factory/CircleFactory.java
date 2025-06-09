@@ -1,4 +1,11 @@
 package org.example.projetshapes.Factory;
 
-public class CircleFactory {
+import org.example.projetshapes.Strategy.CircleShape;
+import org.example.projetshapes.Strategy.ShapeDraw;
+
+public class CircleFactory implements IShapeFactory{
+    @Override
+    public ShapeDraw createShape(String type, double x, double y) {
+        return new CircleShape(x,y);
+    }
 }

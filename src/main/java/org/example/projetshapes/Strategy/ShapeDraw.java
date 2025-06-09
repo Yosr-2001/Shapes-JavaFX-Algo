@@ -7,6 +7,4 @@ public interface ShapeDraw {
     double getX();
     double getY();
 
-    double getWidth();
-    double getHeight();
 }

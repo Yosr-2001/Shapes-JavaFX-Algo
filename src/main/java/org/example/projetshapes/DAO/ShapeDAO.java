@@ -25,29 +25,6 @@ public class ShapeDAO {
         }
     }
 
-    public List<Shape> getAllShapes() {
-        List<Shape> list = new ArrayList<>();
-        String sql = "SELECT type, x, y FROM shapes";
-
-        try (Connection conn = DatabaseConnection.getInstance().getConnection();
-             PreparedStatement stmt = conn.prepareStatement(sql);
-             ResultSet rs = stmt.executeQuery()) {
-
-            while (rs.next()) {
-                String type = rs.getString("type");
-                double x = rs.getDouble("x");
-                double y = rs.getDouble("y");
-                int idDessin = rs.getInt("id_dessin");
-                list.add(new Shape(type, x, y, idDessin));
-            }
-            Logger.getInstance().log("Nombre de formes récupérées : " + list.size());
-
-        } catch (SQLException e) {
-            Logger.getInstance().log("Erreur getAllShapes : " + e.getMessage());
-        }
-        return list;
-    }
-
     public List<Shape> getShapesByDessinId(int dessinId) {
         List<Shape> shapes = new ArrayList<>();
         String sql = "SELECT id, type, x, y, id_dessin FROM shapes WHERE id_dessin = ?";

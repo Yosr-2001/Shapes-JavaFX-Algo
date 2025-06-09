@@ -1,0 +1,33 @@
+Stratégie de logger changée en : File Logger
+Forme dessinée depuis la BDD : Shape{type='rectangle', x=36.80000000000001, y=133.6, idDessin=60}
+Forme dessinée depuis la BDD : Shape{type='circle', x=150.39999999999998, y=191.2, idDessin=60}
+Forme dessinée depuis la BDD : Shape{type='rectangle', x=204.0, y=171.2, idDessin=60}
+Forme dessinée depuis la BDD : Shape{type='circle', x=430.4, y=99.2, idDessin=60}
+Dessin 'Dessin de 2025-06-09_08h32m56' chargé.
+[09/06/2025 08:33:58] ⬛ Rectangle dessiné aux coordonnées : (x=160.8, y=264.8), couleur : #FF9966
+Stratégie de logger changée en : File Logger
+Forme dessinée depuis la BDD : Shape{type='rectangle', x=36.80000000000001, y=133.6, idDessin=60}
+Forme dessinée depuis la BDD : Shape{type='circle', x=150.39999999999998, y=191.2, idDessin=60}
+Forme dessinée depuis la BDD : Shape{type='rectangle', x=204.0, y=171.2, idDessin=60}
+Forme dessinée depuis la BDD : Shape{type='circle', x=430.4, y=99.2, idDessin=60}
+Forme dessinée depuis la BDD : Shape{type='rectangle', x=160.8, y=264.8, idDessin=60}
+Dessin 'Dessin de 2025-06-09_08h32m56' chargé.
+Forme dessinée depuis la BDD : Shape{type='rectangle', x=141.60000000000002, y=133.6, idDessin=62}
+Forme dessinée depuis la BDD : Shape{type='rectangle', x=147.2, y=107.2, idDessin=62}
+Forme dessinée depuis la BDD : Shape{type='circle', x=200.0, y=266.4, idDessin=62}
+Dessin 'Dessin de 2025-06-09_08h55m01' chargé.
+Forme 1 sélectionnée
+Forme 2 sélectionnée
+Chemin tracé entre les formes sélectionnées
+Distance totale du chemin : 217,61 pixels
+Stratégie de logger changée en : File Logger
+Forme dessinée depuis la BDD : Shape{type='rectangle', x=36.80000000000001, y=133.6, idDessin=60}
+Forme dessinée depuis la BDD : Shape{type='circle', x=150.39999999999998, y=191.2, idDessin=60}
+Forme dessinée depuis la BDD : Shape{type='rectangle', x=204.0, y=171.2, idDessin=60}
+Forme dessinée depuis la BDD : Shape{type='circle', x=430.4, y=99.2, idDessin=60}
+Forme dessinée depuis la BDD : Shape{type='rectangle', x=160.8, y=264.8, idDessin=60}
+Dessin 'Dessin de 2025-06-09_08h32m56' chargé.
+Forme 1 sélectionnée
+Forme 2 sélectionnée
+Chemin tracé entre les formes sélectionnées
+Distance totale du chemin : 270,79 pixels

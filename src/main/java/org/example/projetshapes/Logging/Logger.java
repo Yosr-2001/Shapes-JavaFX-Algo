@@ -18,6 +18,4 @@ public class Logger {
         logs.add(message);
         System.out.println("LOG: " + message);
     }
-
-
 }

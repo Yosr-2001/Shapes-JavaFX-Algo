@@ -1,6 +1,5 @@
 package org.example.projetshapes.entities;
 
-
 import java.util.*;
 
 public class Dijkstra {

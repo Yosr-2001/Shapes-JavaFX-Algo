@@ -15,12 +15,6 @@ public class Node {
         this.shape = shape;
     }
 
-//    public double distanceTo(Node other) {
-//        double dx = shape.getX() - other.shape.getX();
-//        double dy = shape.getY() - other.shape.getY();
-//        return Math.sqrt(dx*dx + dy*dy);
-//    }
-
     public double distanceTo(Node other) {
         double thisCenterX = this.shape.getX() + this.shape.getX() / 2.0;
         double thisCenterY = this.shape.getY() + this.shape.getY() / 2.0;
